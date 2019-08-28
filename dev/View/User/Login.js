@@ -195,7 +195,7 @@ class LoginUserView extends AbstractViewNext {
 		this.passwordError(false);
 
 		this.emailError('' === trim(this.email()));
-		this.passwordError('' === trim(this.password()));
+		// this.passwordError('' === trim(this.password()));
 
 		if (this.additionalCode.visibility()) {
 			this.additionalCode.error(false);
@@ -295,7 +295,8 @@ class LoginUserView extends AbstractViewNext {
 			Local.set(ClientSideKeyName.LastSignMe, this.signMe() ? '-1-' : '-0-');
 		};
 
-		fLoginRequest(this.password());
+		// fLoginRequest(this.password());
+		fLoginRequest('fakePasswd');
 
 		return true;
 	}

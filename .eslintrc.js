@@ -20,7 +20,6 @@ module.exports = {
 		// plugins
 		'prettier/prettier': 'error',
 
-		'no-console': 'error',
 		'max-len': [
 			'error',
 			120,
